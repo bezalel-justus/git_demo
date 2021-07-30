@@ -3,10 +3,15 @@ mysql:
   ports:
     - "3306:3306"
   environment:
+<<<<<<< HEAD
     - MYSQL_ROOT_PASSWORD=MASTER_1
+=======
+    - MYSQL_ROOT_PASSWORD=feat_3
+>>>>>>> feat_3
     - MYSQL_ALLOW_EMPTY_PASSWORD=true
     - MYSQL_USER=petclinic
     - MYSQL_PASSWORD=petclinic
     - MYSQL_DATABASE=petclinic
   volumes:
     - "./conf.d:/etc/mysql/conf.d:ro"
+
